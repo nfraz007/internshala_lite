@@ -29,7 +29,7 @@ Route::post('/register/student', ['uses' => 'Auth\Register@student']);
 Route::get('/register/company', ['uses' => 'Auth\Register@company']);
 Route::post('/register/company', ['uses' => 'Auth\Register@company']);
 
-Route::get('/reset_assword', ['uses' => 'Auth\Login@index']); //incomplete
+Route::get('/reset_password', ['uses' => 'Auth\Login@index']); //incomplete
 Route::get('/forgot_password', ['uses' => 'Auth\Login@index']); // incomplete
 
 Route::get('/hire', ['uses' => 'InternshipHome@hire']);

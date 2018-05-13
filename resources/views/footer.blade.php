@@ -7,4 +7,5 @@
 $("#switch").change(function(){
 	
 })
+$(".button-collapse").sideNav();
 </script>
