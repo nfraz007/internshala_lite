@@ -1,9 +1,11 @@
 # Internshala Lite
+
 A simple internsha lite project.
 
 Full Documentation Click here 
 
 # Problem Statement
+
 Design and develop a web application (in PHP), which will be an internship portal similar to that of Internshala, but on a much smaller scale. 
  
 * The application will have 2 kinds of users i.e. students and employers.
@@ -13,12 +15,17 @@ Design and develop a web application (in PHP), which will be an internship porta
 * The employer should be able to see all the application she has received for his internships.
 
 # Technologies:
+
 **front-end** : HTML , CSS , JavaScript , Jquery , Materialize
+
 **back-end** : PHP, Mysqli, JSON
+
 **framework** : Laravel
+
 **Software** : Xampp, Any browser
 
 # Setup and Installation
+
 * Download the zip file of this directory.
 * Copy the file into your xampp htdocs location. by default the location is C://xampp/htdocs
 * Open the xampp controller and start Apache and Mysql
@@ -28,5 +35,6 @@ Create a new database internshala_lite
 * Now everything is set. Open your browser any type this : localhost/blood_bank
 
 # ER diagram
+
 Entity relationship diagram of this project
 ![er_diagram](snapshot/internshala_lite_er.jpg)
