@@ -2,7 +2,7 @@
 
 A simple internsha lite project.
 
-Full Documentation Click here 
+Full Documentation [Click here](https://nfraz007.github.io/internshala_lite/)
 
 # Problem Statement
 
