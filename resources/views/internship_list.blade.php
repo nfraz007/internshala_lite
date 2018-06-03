@@ -2,7 +2,7 @@
 
 <div class="container-fluid blue-grey">
 	<div class="row pd30">
-		<form action="{{ URL('hire') }}" method="GET">
+		<form action="{{ $href }}" method="GET">
 			<div class="input-field col s12 m3 l3 white-text">
 			    <select name="filter_category">
 			      <option value="" selected>Choose your option</option>

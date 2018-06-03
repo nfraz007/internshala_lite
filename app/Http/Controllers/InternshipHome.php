@@ -53,6 +53,7 @@ class InternshipHome extends BaseController
 
         $data["cities"] = City::get();
         $data["categories"] = Category::get();
+        $data["href"] = URL("internship");
 
     	return view('internship_list', $data);
     }
@@ -106,6 +107,7 @@ class InternshipHome extends BaseController
 
         $data["cities"] = City::get();
         $data["categories"] = Category::get();
+        $data["href"] = URL("hire");
 
         return view('hire', $data);
     }

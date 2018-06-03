@@ -12,9 +12,11 @@
 	<div class="row">
 		@foreach($popular_cities as $popular_city)
 		<div class="col s6 m2 l2">
-			<div class="card-panel blue-grey darken-4">
-	          <span class="white-text">{{ $popular_city["city_name"] }}</span>
-	        </div>
+			<a href="{{ URL('internship?filter_category=&filter_city='.$popular_city['city_id'].'&filter_search=&filter=Filter')}}">
+				<div class="card-panel blue-grey darken-4">
+		          <span class="white-text">{{ $popular_city["city_name"] }}</span>
+		        </div>
+		    </a>
 		</div>
 		@endforeach
 	</div>
@@ -25,9 +27,11 @@
 	<div class="row">
 		@foreach($popular_categories as $popular_category)
 		<div class="col s6 m2 l2">
-			<div class="card-panel blue-grey darken-4">
-	          <span class="white-text">{{ $popular_category["category_name"] }}</span>
-	        </div>
+			<a href="{{ URL('internship?filter_category='.$popular_category['category_id'].'&filter_city=&filter_search=&filter=Filter')}}">
+				<div class="card-panel blue-grey darken-4">
+		          <span class="white-text">{{ $popular_category["category_name"] }}</span>
+		        </div>
+		    </a>
 		</div>
 		@endforeach
 	</div>
