@@ -15,7 +15,7 @@
         <a href="{{ URL('home') }}" class="brand-logo">Internshala</a>
         <ul class="right hide-on-med-and-down">
             @if($is_login)
-            <li>
+            <!-- <li>
                 <div class="switch">
                     <label>
                         Student
@@ -24,7 +24,7 @@
                         Company
                     </label>
                 </div>
-            </li>
+            </li> -->
             @endif
             <li class="tab-internship"><a href="{{ URL('internship') }}">Internship</a></li>
             @if($is_login)

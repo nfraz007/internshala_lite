@@ -36,7 +36,9 @@ class Account extends BaseController
         $data["switch"] = (base64_decode($request->session()->get("user_type")) == "1") ? "checked" : "";
 
         $user_id = base64_decode($request->session()->get("user_id"));
-        $data["user"] = User::where("user_id", $user_id)->get();
+        $data["user"] = User::where("user_id", $user_id)->first();
+
+        $data["action"] = URL("account");
 
     	return view('account', $data);
     }
