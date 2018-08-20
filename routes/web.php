@@ -30,6 +30,7 @@ Route::get('/register/company', ['uses' => 'Auth\Register@company']);
 Route::post('/register/company', ['uses' => 'Auth\Register@company']);
 
 Route::get('/account', ['uses' => 'Account@index']);
+Route::post('/account', ['uses' => 'Account@index']);
 Route::get('/reset_password', ['uses' => 'Auth\Login@index']); //incomplete
 Route::get('/forgot_password', ['uses' => 'Auth\Login@index']); // incomplete
 

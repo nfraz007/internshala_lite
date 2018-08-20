@@ -40,6 +40,31 @@ class Account extends BaseController
 
         $data["action"] = URL("account");
 
+        if($request->input("submit")){
+            // user has submit the form
+            $data["first_name"] = $request->input("first_name");
+            $data["last_name"] = $request->input("last_name");
+            $data["website"] = $request->input("website");
+            
+
+            // validating every thing
+            $validator=Validator::make($request->all(), [
+                'first_name' => 'required|string|max:50',
+                'last_name' => 'required|string|max:50',
+                'website' => 'required|url|max:500',
+            ]);
+
+            if($validator->fails()){
+                return view('account', $data)->withErrors($validator);
+            }
+
+            // update
+            User::where("user_id", "$user_id")->update([ "first_name" => $data["first_name"], "last_name" => $data["last_name"], "website" => $data["website"], "updated_at" => $this->datetime ]);
+            
+            $data["status"] = "teal-text";
+            $data["message"] = "You are successfully updated your profile.";
+        }
+
     	return view('account', $data);
     }
 }

@@ -10,12 +10,12 @@
 		    <div id="student" class="col s12 m12 l8 offset-l2 pdtb30">
 		    	<form action="{{ $action }}" method="POST">
 			    	<div class="input-field">
-			          <input type="text" name="email" value="@isset($email) {{ $email }} @endisset" class="@if($errors->has('email')) invalid @endif" required>
+			          <input type="text" name="email" value="test@gmail.com" class="@if($errors->has('email')) invalid @endif" required>
 			          <label>Email</label>
 			          <small class="red-text">@if($errors->has('email')) {{ $errors->first('email') }} @endif</small>
 			        </div>
 			        <div class="input-field">
-			          <input type="password" name="password" required>
+			          <input type="password" name="password" value="123456" required>
 			          <label>Password</label>
 			          <small class="red-text">@if($errors->has('password')) {{ $errors->first('password') }} @endif</small>
 			        </div>

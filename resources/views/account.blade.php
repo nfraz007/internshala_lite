@@ -17,7 +17,7 @@
 	            <small class="red-text">@if($errors->has('last_name')) {{ $errors->first('last_name') }} @endif</small>
 	        </div>
 	        <div class="input-field col s12 m6 l6">
-	            <input id="email" type="text" name="email" value="@isset($user['email']) {{ $user['email'] }} @endisset" class="@if($errors->has('email')) invalid @endif">
+	            <input id="email" type="text" name="email" value="@isset($user['email']) {{ $user['email'] }} @endisset" class="@if($errors->has('email')) invalid @endif" disabled>
 	            <label for="email">Email</label>
 	            <small class="red-text">@if($errors->has('email')) {{ $errors->first('email') }} @endif</small>
 	        </div>
@@ -29,6 +29,7 @@
 	        <div class="col s12 m12 l12 center-align">
 	        	<input type="hidden" name="_token" value="{{ csrf_token() }}">
 	        	<input class="waves-effect waves-light btn blue-grey darken-4 white-text" type="submit" name="submit" value="Save">
+	        	<p class="@isset($status) {{ $status }} @endisset">@isset($message) {{ $message }} @endisset</p>
 	        </div>
 	    </form>
 	</div>

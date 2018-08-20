@@ -29,9 +29,8 @@
             <li class="tab-internship"><a href="{{ URL('internship') }}">Internship</a></li>
             @if($is_login)
             	@if($is_login == "1")
-            		<li class="tab-dashboard-student"><a href="{{ URL('dashboard/student') }}">Dashboard</a></li>
+
             	@else
-            		<li class="tab-dashboard-company"><a href="{{ URL('dashboard/company') }}">Dashboard</a></li>
                     <li class="tab-hire"><a href="{{ URL('hire') }}">Hire Intern</a></li>
             	@endif
             	<li class="tab-account"><a class="dropdown-button" href="#" data-beloworigin="true" data-activates="dropdown-logout" data-constrainwidth="false">Hello {{ $username }}<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -62,9 +61,8 @@
             <li><a href="{{ URL('internship') }}" class="waves-effect waves-light">Internship</a></li>
             @if($is_login)
                 @if($is_login == "1")
-                    <li><a href="{{ URL('dashboard/student') }}" class="waves-effect waves-light">Dashboard</a></li>
+
                 @else
-                    <li><a href="{{ URL('dashboard/company') }}" class="waves-effect waves-light">Dashboard</a></li>
                     <li><a href="{{ URL('hire') }}" class="waves-effect waves-light">Hire Intern</a></li>
                 @endif
                 <li><div class="divider"></div></li>
