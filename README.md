@@ -1,6 +1,6 @@
 # Internshala Lite
 
-A simple internsha lite project.
+A simple internshala lite project in laravel.
 
 # Problem Statement
 
